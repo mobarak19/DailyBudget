@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Daily Budget</string>
+    <string name="forgotpasstext"><u><i>Forgot password?</i></u></string>
+    <string name="banner_ad_unit_id">ca-app-pub-6222891704841980/1939499336</string>
+
+    <string-array name="currency">
+        <item>$</item>
+        <item>₨</item>
+        <item>৳</item>
+        <item>€</item>
+        <item>£</item>
+        <item>¥</item>
+        <item>₩</item>
+        <item>฿</item>
+
+    </string-array>
+</resources>

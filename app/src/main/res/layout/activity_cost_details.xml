@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_cost_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.cse.cou.mobarak.dailybudget.CostDetails">
+  <LinearLayout
+      android:id="@+id/show_average"
+      android:orientation="vertical"
+      android:gravity="center"
+      android:visibility="invisible"
+      android:background="#dfdfdf"
+      android:layout_alignParentTop="true"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+      <TextView
+          android:textColor="#fff"
+android:layout_marginTop="5dp"
+          android:text="Monthly Budget: 3500"
+          android:id="@+id/getMonthly_budget"
+          android:layout_width="wrap_content"
+          android:layout_marginBottom="5dp"
+          android:padding="8dp"
+          android:textSize="14sp"
+
+          android:background="@drawable/radius_background"
+          android:layout_height="wrap_content" />
+      <TextView
+          android:textColor="#fff"
+          android:padding="8dp"
+
+          android:textSize="14sp"
+          android:text="Expected Daily Average: 500"
+          android:id="@+id/getDaily_budget"
+          android:layout_width="wrap_content"
+
+          android:background="@drawable/radius_background"
+          android:layout_height="wrap_content" />
+
+  </LinearLayout>
+
+    <ExpandableListView
+        android:layout_marginTop="80dp"
+        android:id="@+id/list_of_date_cost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ExpandableListView>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingbutton_cost_details"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_add_black_24dp"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1042189145972",
+    "firebase_url": "https://dailybudjet-2ce8c.firebaseio.com",
+    "project_id": "dailybudjet-2ce8c",
+    "storage_bucket": "dailybudjet-2ce8c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1042189145972:android:4b927138c64c279a",
+        "android_client_info": {
+          "package_name": "com.cse.cou.mobarak.dailybudget"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1042189145972-5tpqkcqg29713jup0dm5kftvjfjp7fpo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cse.cou.mobarak.dailybudget",
+            "certificate_hash": "a59fb478d00bc7c73bc92fbd17f31b632429208b"
+          }
+        },
+        {
+          "client_id": "1042189145972-8urvt394nlgv58ptvtof87sj5rh397f7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDX29qOIR1n-SrmZ9bcSdNcuRdToXVVRk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1042189145972-8urvt394nlgv58ptvtof87sj5rh397f7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

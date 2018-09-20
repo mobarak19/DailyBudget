@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_add_budget"
+        android:layout_width="match_parent"
+
+        android:layout_marginTop="20dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.cse.cou.mobarak.dailybudget.AddBudget">
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/setdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:text="Monthly Budget:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textColor="#006392"
+                android:textSize="16sp"
+                />
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/set_monthly_budget"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_radius"
+                    android:drawableLeft="@drawable/ic_attach_money_black_24dp"
+                    android:drawablePadding="5dp"
+                    android:inputType="number"
+
+                    android:hint="Set Monthly Budget"
+                    android:paddingLeft="10dp"
+                    android:textSize="14sp"
+                    />
+
+                <TextView
+                    android:text="currrency"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/currency_add_budget"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView
+                android:text="Daily Average Budget: 0 "
+                android:id="@+id/show_daily_average_budget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="#006392"
+                android:textSize="16sp"
+                />
+            <Button
+                android:id="@+id/setdate_btn"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_above="@+id/setdate"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+
+                android:background="@drawable/radius_background"
+                android:text="Set Date"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/current_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+
+                android:text="Current date"
+                android:textColor="#006392"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/cost_reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_radius"
+                android:drawableLeft="@drawable/ic_feedback_black_24dp"
+                android:drawablePadding="5dp"
+                android:hint="Reason of cost"
+                android:paddingLeft="10dp"
+
+                android:focusable="true"
+                android:textSize="14sp" />
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+
+                android:layout_height="wrap_content">
+
+                <EditText
+
+                    android:id="@+id/cost_amount"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_radius"
+                    android:drawableLeft="@drawable/ic_attach_money_black_24dp"
+                    android:drawablePadding="5dp"
+                    android:hint="cost amount"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:textSize="14sp" />
+                <TextView
+                    android:text="currrency"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/currency_add_budget2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <Button
+
+                android:id="@+id/save_cost"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/radius_background"
+                android:text="Add cost"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="Or"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/goto_costList"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/radius_background"
+
+                android:text="Goto cost list"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"></View>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/add_add_budget"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"
+
+        >
+
+    </com.google.android.gms.ads.AdView>
+    </RelativeLayout>
